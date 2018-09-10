@@ -1,48 +1,28 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
 
-# Email spool folder
-/app/spool/*
+###> symfony/framework-bundle ###
+.env
+public/bundles/
+var/
+vendor/
+###< symfony/framework-bundle ###
 
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
+###> symfony/phpunit-bridge ###
+.phpunit
+phpunit.xml
+###< symfony/phpunit-bridge ###
 
-# Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
+###> symfony/web-server-bundle ###
+.web-server-pid
+###< symfony/web-server-bundle ###
 
-# Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
-
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
-
-# PHPUnit
-/app/phpunit.xml
-/phpunit.xml
-
-# Build data
-/build/
-
-# Composer PHAR
-/composer.phar
-
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
-
-# Embedded web-server pid file
-/.web-server-pid
+# IDEA
+.ieda/*
+.idea/encodings.xml
+.idea/php.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/symfony-middleware.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
